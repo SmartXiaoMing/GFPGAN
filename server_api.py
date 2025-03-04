@@ -133,6 +133,7 @@ def get_enhance_image():
 
 
 if __name__ == '__main__':
+    host = '0.0.0.0'
     port = 9911
-    print(f"server started at port:{port}")
-    app.run(port = port, debug=True)
+    print(f"server started at {host}:{port}")
+    app.run(host=host, port=port, debug=True)
